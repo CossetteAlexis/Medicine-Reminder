@@ -26,14 +26,14 @@ void setup()
  pinMode(buzzer, OUTPUT);
 
    lcd.setCursor(0,0);
-   lcd.print("Medicin reminder");
+   lcd.print("Medicine reminder");
    lcd.setCursor(0,1);
    lcd.print(" Using Arduino  ");
     delay(2000);
     lcd.setCursor(0,0);
-   lcd.print("By Saddam khan  ");
+   lcd.print("By JCM  ");
    lcd.setCursor(0,1);
-   lcd.print("Engineers Garage");
+   lcd.print("CPE 516");
     delay(2000);
 
  if(!RTC.isrunning())
@@ -71,7 +71,7 @@ void loop()
     defualt();    
 time(3);
      lcd.setCursor(0,0);
-   lcd.print("Medicin reminder");
+   lcd.print("Medicine reminder");
    lcd.setCursor(0,1);
    lcd.print("  time has set  ");
     delay(2000);
@@ -82,7 +82,7 @@ time(3);
  lcd.setCursor(6,0);
  lcd.print(HOUR=now.hour(),DEC); 
  lcd.print(":");
- lcd.print(MINUT=now.minute(),DEC);
+ lcd.print(MINUTE=now.minute(),DEC);
  lcd.print(":");
  lcd.print(SECOND=now.second(),DEC);
  lcd.setCursor(0,1);
@@ -101,7 +101,7 @@ void defualt()
   lcd.setCursor(0,1);
   lcd.print(HOUR);
   lcd.print(":");
-  lcd.print(MINUT);
+  lcd.print(MINUTE);
   lcd.print(":");
   lcd.print(SECOND);
 }
